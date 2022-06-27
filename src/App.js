@@ -27,7 +27,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <Header></Header>
       <Dropper></Dropper>
-
     </ThemeProvider>
   );
 }
