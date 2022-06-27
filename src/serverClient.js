@@ -12,12 +12,11 @@ export const getPrices = (names, in_header, out_header) => {
                 obj[out_header] = price
                 toWrite.push(obj)
             }
-
         } if (!found) {
-            toWrite.push({
-                in_header: name,
-                out_header: 'not-found'
-            })
+            var obj = {}
+            obj[in_header] = name
+            obj[out_header] = "Not found"
+            toWrite.push(obj)
         }
 
     }
